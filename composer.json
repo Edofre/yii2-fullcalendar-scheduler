@@ -5,7 +5,7 @@
     "php": ">=5.5.0",
     "yiisoft/yii2": "*",
     "yiisoft/yii2-jui": "*",
-    "bower-asset/fullcalendar-scheduler": "2.*"
+    "bower-asset/fullcalendar-scheduler": "v1.3.1"
   },
   "keywords": [
     "fullcalendar-scheduler",

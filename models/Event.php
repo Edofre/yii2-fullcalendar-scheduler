@@ -1,6 +1,6 @@
 <?php
 
-namespace edofre\fullcalendar\models;
+namespace edofre\fullcalendarscheduler\models;
 
 class Event extends \yii\base\Model
 {
