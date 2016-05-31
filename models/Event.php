@@ -7,6 +7,9 @@ class Event extends \yii\base\Model
 	/** @var  string Uniquely identifies the given event. Different instances of repeating events should all have the same id. */
 	public $id;
 
+	/** @var  string The identifier for the specified resource, attaches this event to the specified resource */
+	public $resourceId;
+
 	/** @var  string The text on an event's element */
 	public $title;
 

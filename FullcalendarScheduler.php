@@ -18,7 +18,7 @@ class FullcalendarScheduler extends \yii\base\Widget
 	 */
 	public $clientOptions = [
 		'weekends' => true,
-		'default'  => 'agendaDay',
+		'default'  => 'timelineDay',
 		'editable' => false,
 	];
 	/**
@@ -53,7 +53,7 @@ class FullcalendarScheduler extends \yii\base\Widget
 	public $header = [
 		'center' => 'title',
 		'left'   => 'prev,next, today',
-		'right'  => 'agendaDay,agendaWeek,month',
+		'right'  => 'timelineDay,timelineWeek,timelineMonth,timelineYear',
 	];
 	/** @var string  Text to display while the calendar is loading */
 	public $loading = 'Please wait, calendar is loading';
