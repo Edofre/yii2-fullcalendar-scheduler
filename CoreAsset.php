@@ -17,7 +17,8 @@ class CoreAsset extends \yii\web\AssetBundle
 	public $autoGenerate = true;
 	/** @var  array Required CSS files for the fullcalendar */
 	public $css = [
-		'scheduler.css',
+		'fullcalendar/dist/fullcalendar.css',
+		'fullcalendar-scheduler/dist/scheduler.css',
 	];
 	/** @var  array List of the dependencies this assets bundle requires */
 	public $depends = [
@@ -33,12 +34,13 @@ class CoreAsset extends \yii\web\AssetBundle
 	public $googleCalendar = false;
 	/** @var  array Required JS files for the fullcalendar */
 	public $js = [
-		'scheduler.js',
+		'fullcalendar/dist/fullcalendar.js',
+		'fullcalendar-scheduler/dist/scheduler.js',
 	];
 	/** @var  string Language for the fullcalendar */
 	public $language = null;
 	/** @var  string Location of the fullcalendar scheduler distribution */
-	public $sourcePath = '@bower/fullcalendar-scheduler/dist';
+	public $sourcePath = '@bower';
 
 	/**
 	 * @inheritdoc
@@ -47,11 +49,11 @@ class CoreAsset extends \yii\web\AssetBundle
 	{
 		$language = empty($this->language) ? \Yii::$app->language : $this->language;
 		if (file_exists($this->sourcePath . "/lang/$language.js")) {
-			$this->js[] = "lang/$language.js";
+			$this->js[] = "fullcalendar/dist/lang/$language.js";
 		}
 
 		if ($this->googleCalendar) {
-			$this->js[] = 'gcal.js';
+			$this->js[] = 'fullcalendar/dist/gcal.js';
 		}
 
 		parent::registerAssetFiles($view);
