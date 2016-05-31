@@ -1,10 +1,10 @@
 <?php
 
-namespace edofre\fullcalenderscheduler;
+namespace edofre\fullcalendarscheduler;
 
 /**
  * Class ThemeAsset
- * @package edofre\fullcalenderscheduler
+ * @package edofre\fullcalendarscheduler
  */
 class ThemeAsset extends \yii\web\AssetBundle
 {

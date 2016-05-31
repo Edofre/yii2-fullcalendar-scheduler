@@ -1,10 +1,10 @@
 <?php
 
-namespace edofre\fullcalenderscheduler;
+namespace edofre\fullcalendarscheduler;
 
 /**
  * Class CoreAsset
- * @package edofre\fullcalenderscheduler
+ * @package edofre\fullcalendarscheduler
  */
 class CoreAsset extends \yii\web\AssetBundle
 {
@@ -22,8 +22,8 @@ class CoreAsset extends \yii\web\AssetBundle
 	/** @var  array List of the dependencies this assets bundle requires */
 	public $depends = [
 		'yii\web\YiiAsset',
-		'edofre\fullcalenderscheduler\MomentAsset',
-		'edofre\fullcalenderscheduler\PrintAsset',
+		'edofre\fullcalendarscheduler\MomentAsset',
+		'edofre\fullcalendarscheduler\PrintAsset',
 	];
 	/**
 	 * @var  boolean

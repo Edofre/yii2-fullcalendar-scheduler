@@ -1,10 +1,10 @@
 <?php
 
-namespace edofre\fullcalenderscheduler;
+namespace edofre\fullcalendarscheduler;
 
 /**
  * Class PrintAsset
- * @package edofre\fullcalenderscheduler
+ * @package edofre\fullcalendarscheduler
  */
 class PrintAsset extends \yii\web\AssetBundle
 {

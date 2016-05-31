@@ -1,6 +1,6 @@
 <?php
 
-namespace edofre\fullcalenderscheduler;
+namespace edofre\fullcalendarscheduler;
 
 use yii\helpers\Html;
 use yii\helpers\Json;
