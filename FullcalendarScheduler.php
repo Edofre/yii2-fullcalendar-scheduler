@@ -9,7 +9,7 @@ use yii\web\View;
 
 /**
  * Class FullcalendarScheduler
- * @package edofre\fullcalenderscheduler
+ * @package edofre\fullcalendarscheduler
  */
 class FullcalendarScheduler extends \yii\base\Widget
 {
