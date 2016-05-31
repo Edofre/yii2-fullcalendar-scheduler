@@ -25,6 +25,10 @@ class FullcalendarScheduler extends \yii\base\Widget
 	 * @var array  Array containing the events, can be JSON array, PHP array or URL that returns an array containing JSON events
 	 */
 	public $events = [];
+	/**
+	 * @var array  Array containing the resources, can be JSON array, PHP array or URL that returns an array containing JSON resources
+	 */
+	public $resources = [];
 	/** @var boolean  Determines whether or not to include the gcal.js */
 	public $googleCalendar = false;
 	/**
@@ -123,6 +127,7 @@ class FullcalendarScheduler extends \yii\base\Widget
 
 		// Load the events
 		$options['events'] = $this->events;
+		$options['resources'] = $this->resources;
 		$options = array_merge($options, $this->clientOptions);
 
 		return Json::encode($options);
