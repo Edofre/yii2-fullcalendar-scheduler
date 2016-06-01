@@ -8,6 +8,10 @@ namespace edofre\fullcalendarscheduler\models;
  */
 class Event extends \yii\base\Model
 {
+	/** Rendering options */
+	const RENDERING_BACKGROUND = 'background';
+	const RENDERING_INVERSE_BACKGROUND = 'inverse-background';
+
 	/** @var  string Uniquely identifies the given event. Different instances of repeating events should all have the same id. */
 	public $id;
 	/** @var  string The identifier for the specified resource, attaches this event to the specified resource */
@@ -41,9 +45,9 @@ class Event extends \yii\base\Model
 	/** @var  string Sets an event's background and border color just like the calendar-wide eventColor option. */
 	public $color;
 	/** @var  string Sets an event's background color just like the calendar-wide eventBackgroundColor option. */
-	public $backgroundColor = 'grey';
+	public $backgroundColor;
 	/** @var  string Sets an event's border color just like the the calendar-wide eventBorderColor option. */
-	public $borderColor = 'black';
+	public $borderColor;
 	/** @var  string Sets an event's text color just like the calendar-wide eventTextColor option. */
 	public $textColor;
 

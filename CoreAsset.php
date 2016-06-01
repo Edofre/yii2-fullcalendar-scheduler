@@ -49,7 +49,7 @@ class CoreAsset extends \yii\web\AssetBundle
 	public function registerAssetFiles($view)
 	{
 		$language = empty($this->language) ? \Yii::$app->language : $this->language;
-		if (file_exists($this->sourcePath . "/lang/$language.js")) {
+		if (file_exists($this->sourcePath . "/fullcalendar/dist/lang/$language.js")) {
 			$this->js[] = "fullcalendar/dist/lang/$language.js";
 		}
 

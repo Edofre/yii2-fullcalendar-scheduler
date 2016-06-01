@@ -43,5 +43,4 @@ class Resource extends \yii\base\Model
 			[['eventColor', 'eventBackgroundColor', 'eventBorderColor', 'eventTextColor', 'eventClassName', 'children', 'parentId', 'parent'], 'safe'],
 		];
 	}
-
 }
