@@ -14,15 +14,22 @@
 	$(function() { // document ready
 
 		$('#calendar').fullCalendar({
-			now: '2016-05-07',
-			editable: true,
-			aspectRatio: 1.8,
-			scrollTime: '00:00',
-			header: {
-				left: 'promptResource today prev,next',
-				center: 'title',
-				right: 'timelineDay,timelineThreeDays,agendaWeek,month'
-			},
+			'now'               => '2016-05-07',
+			'editable'          => true, // enable draggable events
+			'aspectRatio'       => 1.8,
+			'scrollTime'        => '00:00', // undo default 6am scrollTime
+			'header'            => [
+			'left'   => 'today prev,next',
+			'center' => 'title',
+			'right'  => 'timelineDay,timelineThreeDays,agendaWeek,month',
+		],
+		'defaultView'       => 'timelineDay',
+			'views'             => [
+			'timelineThreeDays' => [
+			'type'     => 'timeline',
+			'duration' => ['days' => 3],
+		],
+		],
 			customButtons: {
 				promptResource: {
 					text: '+ room',
@@ -38,14 +45,7 @@
 					}
 				}
 			},
-			defaultView: 'timelineDay',
-			views: {
-				timelineThreeDays: {
-					type: 'timeline',
-					duration: { days: 3 }
-				}
-			},
-			resourceLabelText: 'Rooms',
+		'resourceLabelText' => 'Rooms',
 			resourceRender: function(resource, cellEls) {
 				cellEls.on('click', function() {
 					if (confirm('Are you sure you want to delete ' + resource.title + '?')) {

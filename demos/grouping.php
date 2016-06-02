@@ -1,22 +1,22 @@
 <?= \edofre\fullcalendarscheduler\FullcalendarScheduler::widget([
 	'clientOptions' => [
-			now: '2016-05-07',
-			editable: true,
-			aspectRatio: 1.8,
-			scrollTime: '00:00',
-			header: {
-				left: 'today prev,next',
-				center: 'title',
-				right: 'timelineDay,timelineThreeDays,agendaWeek,month'
-			},
-			defaultView: 'timelineDay',
-			views: {
-				timelineThreeDays: {
-					type: 'timeline',
-					duration: { days: 3 }
-				}
-			},
-			resourceGroupField: 'building',
+		'now'               => '2016-05-07',
+		'editable'          => true, // enable draggable events
+		'aspectRatio'       => 1.8,
+		'scrollTime'        => '00:00', // undo default 6am scrollTime
+		'header'            => [
+			'left'   => 'today prev,next',
+			'center' => 'title',
+			'right'  => 'timelineDay,timelineThreeDays,agendaWeek,month',
+		],
+		'defaultView'       => 'timelineDay',
+		'views'             => [
+			'timelineThreeDays' => [
+				'type'     => 'timeline',
+				'duration' => ['days' => 3],
+			],
+		],
+			'resourceGroupField' => 'building',
 			resources: [
 				{ id: 'a', building: '460 Bryant', title: 'Auditorium A' },
 				{ id: 'b', building: '460 Bryant', title: 'Auditorium B', eventColor: 'green' },

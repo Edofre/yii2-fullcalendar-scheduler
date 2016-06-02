@@ -1,22 +1,22 @@
 <?= \edofre\fullcalendarscheduler\FullcalendarScheduler::widget([
 	'clientOptions' => [
-			now: '2016-05-07',
-			editable: true, // enable draggable events
-			aspectRatio: 1.8,
-			scrollTime: '00:00', // undo default 6am scrollTime
-			header: {
-				left: 'today prev,next',
-				center: 'title',
-				right: 'timelineDay,timelineThreeDays,agendaWeek,month'
-			},
-			defaultView: 'timelineDay',
-			views: {
-				timelineThreeDays: {
-					type: 'timeline',
-					duration: { days: 3 }
-				}
-			},
-			resourceLabelText: 'Rooms',
+		'now'               => '2016-05-07',
+		'editable'          => true, // enable draggable events
+		'aspectRatio'       => 1.8,
+		'scrollTime'        => '00:00', // undo default 6am scrollTime
+		'header'            => [
+			'left'   => 'today prev,next',
+			'center' => 'title',
+			'right'  => 'timelineDay,timelineThreeDays,agendaWeek,month',
+		],
+		'defaultView'       => 'timelineDay',
+		'views'             => [
+			'timelineThreeDays' => [
+				'type'     => 'timeline',
+				'duration' => ['days' => 3],
+			],
+		],
+		'resourceLabelText' => 'Rooms',
 			resourceText: function(resource) {
 				return 'Auditorium ' + ('' + resource.id).toUpperCase();
 			},
@@ -61,7 +61,7 @@
 	['id' => '4', 'resourceId' => 'e', 'start' => '2016-05-07T03:00:00', 'end' => '2016-05-07T08:00:00', 'title' => 'event 4'],
 	['id' => '5', 'resourceId' => 'f', 'start' => '2016-05-07T00:30:00', 'end' => '2016-05-07T02:30:00', 'title' => 'event 5'],
 ],
-		});
+		]
 	
 ]);
 ?>

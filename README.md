@@ -2,10 +2,6 @@
 
 ## Installation
 
-// TODO 
-
-Still in development, will not work at this moment.
-
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
 To install, either run
@@ -24,4 +20,6 @@ to the ```require``` section of your `composer.json` file.
 
 ## Usage
 
-// TODO
+See the demos/ folder for all the examples.
+
+Currently some of the demo files still have to be converted from the original HTML format to usable demo's but the basics are there.

@@ -1,69 +1,69 @@
 <?= \edofre\fullcalendarscheduler\FullcalendarScheduler::widget([
 	'clientOptions' => [
-			now: '2016-05-07',
-			editable: true,
-			aspectRatio: 1.8,
-			scrollTime: '00:00',
-			header: {
-				left: 'today prev,next',
-				center: 'title',
-				right: 'timelineDay,timelineThreeDays,agendaWeek,month'
-			},
-			defaultView: 'timelineDay',
-			views: {
-				timelineThreeDays: {
-					type: 'timeline',
-					duration: { days: 3 }
-				}
-			},
-			resourceAreaWidth: '30%',
-			resourceColumns: [
-				{
-					labelText: 'Room',
-					field: 'title'
-				},
-				{
-					labelText: 'Occupancy',
-					field: 'occupancy'
-				}
+		'now'               => '2016-05-07',
+		'editable'          => true, // enable draggable events
+		'aspectRatio'       => 1.8,
+		'scrollTime'        => '00:00', // undo default 6am scrollTime
+		'header'            => [
+			'left'   => 'today prev,next',
+			'center' => 'title',
+			'right'  => 'timelineDay,timelineThreeDays,agendaWeek,month',
+		],
+		'defaultView'       => 'timelineDay',
+		'views'             => [
+			'timelineThreeDays' => [
+				'type'     => 'timeline',
+				'duration' => ['days' => 3],
 			],
-			resourceOrder: '-occupancy,title', // when occupancy tied, order by title
-			'resources'         => [
-	['id' => 'a', 'title' => 'Auditorium A'],
-	['id' => 'b', 'title' => 'Auditorium B', 'eventColor' => 'green'],
-	['id' => 'c', 'title' => 'Auditorium C', 'eventColor' => 'orange'],
-	['id' => 'd', 'title' => 'Auditorium D'],
-	['id' => 'e', 'title' => 'Auditorium E'],
-	['id' => 'f', 'title' => 'Auditorium F', 'eventColor' => 'red'],
-	['id' => 'g', 'title' => 'Auditorium G'],
-	['id' => 'h', 'title' => 'Auditorium H'],
-	['id' => 'i', 'title' => 'Auditorium I'],
-	['id' => 'j', 'title' => 'Auditorium J'],
-	['id' => 'k', 'title' => 'Auditorium K'],
-	['id' => 'l', 'title' => 'Auditorium L'],
-	['id' => 'm', 'title' => 'Auditorium M'],
-	['id' => 'n', 'title' => 'Auditorium N'],
-	['id' => 'o', 'title' => 'Auditorium O'],
-	['id' => 'p', 'title' => 'Auditorium P'],
-	['id' => 'q', 'title' => 'Auditorium Q'],
-	['id' => 'r', 'title' => 'Auditorium R'],
-	['id' => 's', 'title' => 'Auditorium S'],
-	['id' => 't', 'title' => 'Auditorium T'],
-	['id' => 'u', 'title' => 'Auditorium U'],
-	['id' => 'v', 'title' => 'Auditorium V'],
-	['id' => 'w', 'title' => 'Auditorium W'],
-	['id' => 'x', 'title' => 'Auditorium X'],
-	['id' => 'y', 'title' => 'Auditorium Y'],
-	['id' => 'z', 'title' => 'Auditorium Z'],
-],
-			'events'            => [
-	['id' => '1', 'resourceId' => 'b', 'start' => '2016-05-07T02:00:00', 'end' => '2016-05-07T07:00:00', 'title' => 'event 1'],
-	['id' => '2', 'resourceId' => 'c', 'start' => '2016-05-07T05:00:00', 'end' => '2016-05-07T22:00:00', 'title' => 'event 2'],
-	['id' => '3', 'resourceId' => 'd', 'start' => '2016-05-06', 'end' => '2016-05-08', 'title' => 'event 3'],
-	['id' => '4', 'resourceId' => 'e', 'start' => '2016-05-07T03:00:00', 'end' => '2016-05-07T08:00:00', 'title' => 'event 4'],
-	['id' => '5', 'resourceId' => 'f', 'start' => '2016-05-07T00:30:00', 'end' => '2016-05-07T02:30:00', 'title' => 'event 5'],
-],
-		});
-	
+		],
+		'resourceAreaWidth' => '30%',
+		'resourceColumns'   => [
+			[
+				'labelText' => 'Room',
+				'field'     => 'title',
+			],
+			[
+				'labelText' => 'Occupancy',
+				'field'     => 'occupancy',
+			],
+		],
+		'resourceOrder'     => '-occupancy,title', // when occupancy tied, order by title
+		'resources'         => [
+			['id' => 'a', 'title' => 'Auditorium A', 'occupancy' => 40],
+			['id' => 'b', 'title' => 'Auditorium B', 'occupancy' => 40, 'eventColor' => 'green'],
+			['id' => 'c', 'title' => 'Auditorium C', 'occupancy' => 40, 'eventColor' => 'orange'],
+			['id' => 'd', 'title' => 'Auditorium D', 'occupancy' => 40,],
+			['id' => 'e', 'title' => 'Auditorium E', 'occupancy' => 40],
+			['id' => 'f', 'title' => 'Auditorium F', 'occupancy' => 40, 'eventColor' => 'red'],
+			['id' => 'g', 'title' => 'Auditorium G', 'occupancy' => 40],
+			['id' => 'h', 'title' => 'Auditorium H', 'occupancy' => 40],
+			['id' => 'i', 'title' => 'Auditorium I', 'occupancy' => 50],
+			['id' => 'j', 'title' => 'Auditorium J', 'occupancy' => 50],
+			['id' => 'k', 'title' => 'Auditorium K', 'occupancy' => 40],
+			['id' => 'l', 'title' => 'Auditorium L', 'occupancy' => 40],
+			['id' => 'm', 'title' => 'Auditorium M', 'occupancy' => 40],
+			['id' => 'n', 'title' => 'Auditorium N', 'occupancy' => 80],
+			['id' => 'o', 'title' => 'Auditorium O', 'occupancy' => 80],
+			['id' => 'p', 'title' => 'Auditorium P', 'occupancy' => 40],
+			['id' => 'q', 'title' => 'Auditorium Q', 'occupancy' => 40],
+			['id' => 'r', 'title' => 'Auditorium R', 'occupancy' => 40],
+			['id' => 's', 'title' => 'Auditorium S', 'occupancy' => 40],
+			['id' => 't', 'title' => 'Auditorium T', 'occupancy' => 40],
+			['id' => 'u', 'title' => 'Auditorium U', 'occupancy' => 40],
+			['id' => 'v', 'title' => 'Auditorium V', 'occupancy' => 40],
+			['id' => 'w', 'title' => 'Auditorium W', 'occupancy' => 40],
+			['id' => 'x', 'title' => 'Auditorium X', 'occupancy' => 40],
+			['id' => 'y', 'title' => 'Auditorium Y', 'occupancy' => 40],
+			['id' => 'z', 'title' => 'Auditorium Z', 'occupancy' => 40],
+		],
+		'events'            => [
+			['id' => '1', 'resourceId' => 'b', 'start' => '2016-05-07T02:00:00', 'end' => '2016-05-07T07:00:00', 'title' => 'event 1'],
+			['id' => '2', 'resourceId' => 'c', 'start' => '2016-05-07T05:00:00', 'end' => '2016-05-07T22:00:00', 'title' => 'event 2'],
+			['id' => '3', 'resourceId' => 'd', 'start' => '2016-05-06', 'end' => '2016-05-08', 'title' => 'event 3'],
+			['id' => '4', 'resourceId' => 'e', 'start' => '2016-05-07T03:00:00', 'end' => '2016-05-07T08:00:00', 'title' => 'event 4'],
+			['id' => '5', 'resourceId' => 'f', 'start' => '2016-05-07T00:30:00', 'end' => '2016-05-07T02:30:00', 'title' => 'event 5'],
+		],
+	],
+
 ]);
 ?>
