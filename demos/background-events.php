@@ -54,10 +54,8 @@
 		'events'            => [
 			// background event, associated with a resource
 			['id' => 'bg1', 'resourceId' => 'b', 'rendering' => 'background', 'start' => '2016-05-07T01:00:00', 'end' => '2016-05-07T04:00:00'],
-
 			// background event, NOT associated with a resource
 			['id' => 'bg2', 'rendering' => 'background', 'start' => '2016-05-07T05:00:00', 'end' => '2016-05-07T08:00:00'],
-
 			// normal events...
 			['id' => '1', 'resourceId' => 'b', 'start' => '2016-05-07T02:00:00', 'end' => '2016-05-07T07:00:00', 'title' => 'event 1'],
 			['id' => '2', 'resourceId' => 'c', 'start' => '2016-05-07T05:00:00', 'end' => '2016-05-07T22:00:00', 'title' => 'event 2'],
