@@ -1,15 +1,15 @@
 <?= \edofre\fullcalendarscheduler\FullcalendarScheduler::widget([
+	'header'        => [
+		'left'   => 'today prev,next',
+		'center' => 'title',
+		'right'  => 'timelineDay,timelineThreeDays,agendaWeek,month',
+	],
 	'clientOptions' => [
 		'theme'             => true,
 		'now'               => '2016-05-07',
 		'editable'          => true, // enable draggable events
 		'aspectRatio'       => 1.8,
 		'scrollTime'        => '00:00', // undo default 6am scrollTime
-		'header'            => [
-			'left'   => 'today prev,next',
-			'center' => 'title',
-			'right'  => 'timelineDay,timelineThreeDays,agendaWeek,month',
-		],
 		'defaultView'       => 'timelineDay',
 		'views'             => [
 			'timelineThreeDays' => [

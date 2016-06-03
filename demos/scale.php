@@ -1,14 +1,14 @@
 <?= \edofre\fullcalendarscheduler\FullcalendarScheduler::widget([
+	'header'        => [
+		'left'   => 'today prev,next',
+		'center' => 'title',
+		'right'  => 'timelineDay,timelineTenDay,timelineMonth,timelineYear',
+	],
 	'clientOptions' => [
 		'now'               => '2016-05-07',
 		'editable'          => true,
 		'aspectRatio'       => 1.8,
 		'scrollTime'        => '00:00',
-		'header'            => [
-			'left'   => 'today prev,next',
-			'center' => 'title',
-			'right'  => 'timelineDay,timelineTenDay,timelineMonth,timelineYear',
-		],
 		'defaultView'       => 'timelineDay',
 		'views'             => [
 			'timelineDay'    => [
