@@ -1,6 +1,13 @@
 Change Log: `yii2-fullcalendar-scheduler`
 =========================================
 
+## Version 1.1.3
+
+**Date:** 25-Nov-2016
+
+- Update language files path
+
+
 ## Version 1.1.2
 
 **Date:** 18-Nov-2016
