@@ -30,67 +30,68 @@ $this->registerJs("
 ?>
 
 <?= \edofre\fullcalendarscheduler\FullcalendarScheduler::widget([
-	'clientOptions' => [
-		'now'               => '2016-05-07',
-		'editable'          => true, // enable draggable events
-		'droppable'         => true, // enable draggable events
-		'aspectRatio'       => 1.8,
-		'scrollTime'        => '00:00', // undo default 6am scrollTime
-		'header'            => [
-			'left'   => 'today prev,next',
-			'center' => 'title',
-			'right'  => 'timelineDay,timelineThreeDays,agendaWeek,month',
-		],
-		'defaultView'       => 'timelineDay',
-		'views'             => [
-			'timelineThreeDays' => [
-				'type'     => 'timeline',
-				'duration' => ['days' => 3],
-			],
-		],
-		'resourceLabelText' => 'Rooms',
-		'resources'         => [
-			['id' => 'a', 'title' => 'Auditorium A'],
-			['id' => 'b', 'title' => 'Auditorium B', 'eventColor' => 'green'],
-			['id' => 'c', 'title' => 'Auditorium C', 'eventColor' => 'orange'],
-			[
-				'id'       => 'd', 'title' => 'Auditorium D',
-				'children' => [
-					['id' => 'd1', 'title' => 'Room D1'],
-					['id' => 'd2', 'title' => 'Room D2'],
-				],
-			],
-			['id' => 'e', 'title' => 'Auditorium E'],
-			['id' => 'f', 'title' => 'Auditorium F', 'eventColor' => 'red'],
-			['id' => 'g', 'title' => 'Auditorium G'],
-			['id' => 'h', 'title' => 'Auditorium H'],
-			['id' => 'i', 'title' => 'Auditorium I'],
-			['id' => 'j', 'title' => 'Auditorium J'],
-			['id' => 'k', 'title' => 'Auditorium K'],
-			['id' => 'l', 'title' => 'Auditorium L'],
-			['id' => 'm', 'title' => 'Auditorium M'],
-			['id' => 'n', 'title' => 'Auditorium N'],
-			['id' => 'o', 'title' => 'Auditorium O'],
-			['id' => 'p', 'title' => 'Auditorium P'],
-			['id' => 'q', 'title' => 'Auditorium Q'],
-			['id' => 'r', 'title' => 'Auditorium R'],
-			['id' => 's', 'title' => 'Auditorium S'],
-			['id' => 't', 'title' => 'Auditorium T'],
-			['id' => 'u', 'title' => 'Auditorium U'],
-			['id' => 'v', 'title' => 'Auditorium V'],
-			['id' => 'w', 'title' => 'Auditorium W'],
-			['id' => 'x', 'title' => 'Auditorium X'],
-			['id' => 'y', 'title' => 'Auditorium Y'],
-			['id' => 'z', 'title' => 'Auditorium Z'],
-		],
-		'events'            => [
-			['id' => '1', 'resourceId' => 'b', 'start' => '2016-05-07T02:00:00', 'end' => '2016-05-07T07:00:00', 'title' => 'event 1'],
-			['id' => '2', 'resourceId' => 'c', 'start' => '2016-05-07T05:00:00', 'end' => '2016-05-07T22:00:00', 'title' => 'event 2'],
-			['id' => '3', 'resourceId' => 'd', 'start' => '2016-05-06', 'end' => '2016-05-08', 'title' => 'event 3'],
-			['id' => '4', 'resourceId' => 'e', 'start' => '2016-05-07T03:00:00', 'end' => '2016-05-07T08:00:00', 'title' => 'event 4'],
-			['id' => '5', 'resourceId' => 'f', 'start' => '2016-05-07T00:30:00', 'end' => '2016-05-07T02:30:00', 'title' => 'event 5'],
-		],
-		'drop'         => new \yii\web\JsExpression("
+    'header'        => [
+        'left'   => 'today prev,next',
+        'center' => 'title',
+        'right'  => 'timelineDay,timelineThreeDays,agendaWeek,month',
+    ],
+    'clientOptions' => [
+        'now'               => '2016-05-07',
+        'editable'          => true, // enable draggable events
+        'droppable'         => true, // enable draggable events
+        'aspectRatio'       => 1.8,
+        'scrollTime'        => '00:00', // undo default 6am scrollTime
+        'defaultView'       => 'timelineDay',
+        'views'             => [
+            'timelineThreeDays' => [
+                'type'     => 'timeline',
+                'duration' => ['days' => 3],
+            ],
+        ],
+        'resourceLabelText' => 'Rooms',
+        'resources'         => [
+            ['id' => 'a', 'title' => 'Auditorium A'],
+            ['id' => 'b', 'title' => 'Auditorium B', 'eventColor' => 'green'],
+            ['id' => 'c', 'title' => 'Auditorium C', 'eventColor' => 'orange'],
+            [
+                'id'       => 'd',
+                'title'    => 'Auditorium D',
+                'children' => [
+                    ['id' => 'd1', 'title' => 'Room D1'],
+                    ['id' => 'd2', 'title' => 'Room D2'],
+                ],
+            ],
+            ['id' => 'e', 'title' => 'Auditorium E'],
+            ['id' => 'f', 'title' => 'Auditorium F', 'eventColor' => 'red'],
+            ['id' => 'g', 'title' => 'Auditorium G'],
+            ['id' => 'h', 'title' => 'Auditorium H'],
+            ['id' => 'i', 'title' => 'Auditorium I'],
+            ['id' => 'j', 'title' => 'Auditorium J'],
+            ['id' => 'k', 'title' => 'Auditorium K'],
+            ['id' => 'l', 'title' => 'Auditorium L'],
+            ['id' => 'm', 'title' => 'Auditorium M'],
+            ['id' => 'n', 'title' => 'Auditorium N'],
+            ['id' => 'o', 'title' => 'Auditorium O'],
+            ['id' => 'p', 'title' => 'Auditorium P'],
+            ['id' => 'q', 'title' => 'Auditorium Q'],
+            ['id' => 'r', 'title' => 'Auditorium R'],
+            ['id' => 's', 'title' => 'Auditorium S'],
+            ['id' => 't', 'title' => 'Auditorium T'],
+            ['id' => 'u', 'title' => 'Auditorium U'],
+            ['id' => 'v', 'title' => 'Auditorium V'],
+            ['id' => 'w', 'title' => 'Auditorium W'],
+            ['id' => 'x', 'title' => 'Auditorium X'],
+            ['id' => 'y', 'title' => 'Auditorium Y'],
+            ['id' => 'z', 'title' => 'Auditorium Z'],
+        ],
+        'events'            => [
+            ['id' => '1', 'resourceId' => 'b', 'start' => '2016-05-07T02:00:00', 'end' => '2016-05-07T07:00:00', 'title' => 'event 1'],
+            ['id' => '2', 'resourceId' => 'c', 'start' => '2016-05-07T05:00:00', 'end' => '2016-05-07T22:00:00', 'title' => 'event 2'],
+            ['id' => '3', 'resourceId' => 'd', 'start' => '2016-05-06', 'end' => '2016-05-08', 'title' => 'event 3'],
+            ['id' => '4', 'resourceId' => 'e', 'start' => '2016-05-07T03:00:00', 'end' => '2016-05-07T08:00:00', 'title' => 'event 4'],
+            ['id' => '5', 'resourceId' => 'f', 'start' => '2016-05-07T00:30:00', 'end' => '2016-05-07T02:30:00', 'title' => 'event 5'],
+        ],
+        'drop'              => new \yii\web\JsExpression("
 			function(date, jsEvent, ui, resourceId) {
 				console.log('drop', date.format(), resourceId);
 
@@ -101,17 +102,17 @@ $this->registerJs("
 				}
 			}
 		"),
-		'eventReceive' => new \yii\web\JsExpression("
+        'eventReceive'      => new \yii\web\JsExpression("
 			function(event) { // called when a proper external event is dropped
 				console.log('eventReceive', event);
 			}
 		"),
-		'eventDrop'    => new \yii\web\JsExpression("
+        'eventDrop'         => new \yii\web\JsExpression("
 			function(event) { // called when an event (already on the calendar) is moved
 				console.log('eventDrop', event);
 			}
 		"),
-	],
+    ],
 ]);
 ?>
 <?php $this->registerCss('
@@ -167,21 +168,21 @@ $this->registerJs("
 
 <div id='wrap'>
 
-	<div id='external-events'>
-		<h4>Draggable Events</h4>
-		<div class='fc-event'>My Event 1</div>
-		<div class='fc-event'>My Event 2</div>
-		<div class='fc-event'>My Event 3</div>
-		<div class='fc-event'>My Event 4</div>
-		<div class='fc-event'>My Event 5</div>
-		<p>
-			<input type='checkbox' id='drop-remove'/>
-			<label for='drop-remove'>remove after drop</label>
-		</p>
-	</div>
+    <div id='external-events'>
+        <h4>Draggable Events</h4>
+        <div class='fc-event'>My Event 1</div>
+        <div class='fc-event'>My Event 2</div>
+        <div class='fc-event'>My Event 3</div>
+        <div class='fc-event'>My Event 4</div>
+        <div class='fc-event'>My Event 5</div>
+        <p>
+            <input type='checkbox' id='drop-remove'/>
+            <label for='drop-remove'>remove after drop</label>
+        </p>
+    </div>
 
-	<div id='calendar'></div>
+    <div id='calendar'></div>
 
-	<div style='clear:both'></div>
+    <div style='clear:both'></div>
 
 </div>
