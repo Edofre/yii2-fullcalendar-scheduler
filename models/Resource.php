@@ -6,7 +6,7 @@ namespace edofre\fullcalendarscheduler\models;
  * Class Resource
  * @package edofre\fullcalendarscheduler\models
  */
-class Resource extends \yii\base\Model
+class Resource extends CalendarModel
 {
     /** @var  string Uniquely identifies the given resource. */
     public $id;
