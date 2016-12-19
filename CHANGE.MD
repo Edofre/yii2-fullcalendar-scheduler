@@ -1,12 +1,17 @@
 Change Log: `yii2-fullcalendar-scheduler`
 =========================================
 
+## Version 1.1.4
+
+**Date:** 19-Dec-2016
+
+- Proper locale-all.js path 
+
 ## Version 1.1.3
 
 **Date:** 25-Nov-2016
 
 - Update language files path
-
 
 ## Version 1.1.2
 
