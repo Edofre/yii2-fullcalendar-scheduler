@@ -56,5 +56,8 @@ class CoreAsset extends \yii\web\AssetBundle
         if ($this->googleCalendar) {
             $this->js[] = 'fullcalendar/dist/gcal.js';
         }
+
+        // We need to return the parent implementation otherwise the scripts are not loaded
+        return parent::registerAssetFiles($view);
     }
 }
