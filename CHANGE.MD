@@ -8,6 +8,7 @@ Change Log: `yii2-fullcalendar-scheduler`
 - Updated language paths
 - Updated fullcalendar/scheduler versions
 - Added parent::registerAssetFiles($view); in CoreAsset to properly register the scripts
+- Proper model inheritance
 
 ## Version 1.1.5
 
