@@ -1,5 +1,11 @@
 # Yii2 fullcalendar scheduler component
 
+[![Latest Stable Version](https://poser.pugx.org/edofre/yii2-fullcalendar-scheduler/v/stable)](https://packagist.org/packages/edofre/yii2-fullcalendar-scheduler)
+[![Total Downloads](https://poser.pugx.org/edofre/yii2-fullcalendar-scheduler/downloads)](https://packagist.org/packages/edofre/yii2-fullcalendar-scheduler)
+[![Latest Unstable Version](https://poser.pugx.org/edofre/yii2-fullcalendar-scheduler/v/unstable)](https://packagist.org/packages/edofre/yii2-fullcalendar-scheduler)
+[![License](https://poser.pugx.org/edofre/yii2-fullcalendar-scheduler/license)](https://packagist.org/packages/edofre/yii2-fullcalendar-scheduler)
+[![composer.lock](https://poser.pugx.org/edofre/yii2-fullcalendar-scheduler/composerlock)](https://packagist.org/packages/edofre/yii2-fullcalendar-scheduler)
+
 ## Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
