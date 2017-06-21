@@ -1,6 +1,12 @@
 Change Log: `yii2-fullcalendar-scheduler`
 =========================================
 
+## Version 1.1.10
+
+**Date:** 21-Jun-2017
+
+- Use npm instead of bower
+
 ## Version 1.1.9
 
 **Date:** 31-Mar-2017
