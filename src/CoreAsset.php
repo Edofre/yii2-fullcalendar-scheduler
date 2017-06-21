@@ -41,7 +41,7 @@ class CoreAsset extends \yii\web\AssetBundle
     /** @var  string Language for the fullcalendar */
     public $language = null;
     /** @var  string Location of the fullcalendar scheduler distribution */
-    public $sourcePath = '@bower';
+    public $sourcePath = '@npm';
 
     /**
      * @inheritdoc
