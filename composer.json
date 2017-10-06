@@ -5,8 +5,8 @@
     "php": ">=5.5.0",
     "yiisoft/yii2": ">=2.0.9",
     "yiisoft/yii2-jui": ">=2.0.6",
-    "npm-asset/fullcalendar": "3.2.0",
-    "npm-asset/fullcalendar-scheduler": "1.5.1"
+    "npm-asset/fullcalendar": "3.5.1",
+    "npm-asset/fullcalendar-scheduler": "1.7.1"
   },
   "keywords": [
     "fullcalendar-scheduler",
