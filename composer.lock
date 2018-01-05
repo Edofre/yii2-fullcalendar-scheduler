@@ -4,76 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a331ef8108f9f46460579afc6082c7e",
+    "content-hash": "f97134ab0b7a2df28d109cffdb409682",
     "packages": [
         {
-            "name": "bower-asset/jquery",
-            "version": "2.2.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
-                "reference": "c0185ab7c75aab88762c5aae780b9d83b80eda72"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/c0185ab7c75aab88762c5aae780b9d83b80eda72",
-                "reference": "c0185ab7c75aab88762c5aae780b9d83b80eda72",
-                "shasum": ""
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": "dist/jquery.js",
-                "bower-asset-ignore": [
-                    "package.json"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "browser",
-                "javascript",
-                "jquery",
-                "library"
-            ]
-        },
-        {
-            "name": "bower-asset/jquery-ui",
-            "version": "1.11.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/components/jqueryui.git",
-                "reference": "c34f8dbf3ba57b3784b93f26119f436c0e8288e1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/components/jqueryui/zipball/c34f8dbf3ba57b3784b93f26119f436c0e8288e1",
-                "reference": "c34f8dbf3ba57b3784b93f26119f436c0e8288e1",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/jquery": ">=1.6"
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": [
-                    "jquery-ui.js"
-                ],
-                "bower-asset-ignore": []
-            }
-        },
-        {
-            "name": "bower-asset/jquery.inputmask",
-            "version": "3.3.8",
+            "name": "bower-asset/inputmask",
+            "version": "3.3.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobinHerbots/Inputmask.git",
-                "reference": "791d84990c4a98df1597e9d155be53a3725805dd"
+                "reference": "5e670ad62f50c738388d4dcec78d2888505ad77b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobinHerbots/Inputmask/zipball/791d84990c4a98df1597e9d155be53a3725805dd",
-                "reference": "791d84990c4a98df1597e9d155be53a3725805dd",
+                "url": "https://api.github.com/repos/RobinHerbots/Inputmask/zipball/5e670ad62f50c738388d4dcec78d2888505ad77b",
+                "reference": "5e670ad62f50c738388d4dcec78d2888505ad77b",
                 "shasum": ""
             },
             "require": {
@@ -119,7 +63,69 @@
                 "jquery",
                 "mask",
                 "plugins"
-            ]
+            ],
+            "time": "2017-11-21T11:46:23+00:00"
+        },
+        {
+            "name": "bower-asset/jquery",
+            "version": "3.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jquery/jquery-dist.git",
+                "reference": "77d2a51d0520d2ee44173afdf4e40a9201f5964e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/77d2a51d0520d2ee44173afdf4e40a9201f5964e",
+                "reference": "77d2a51d0520d2ee44173afdf4e40a9201f5964e",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": "dist/jquery.js",
+                "bower-asset-ignore": [
+                    "package.json"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "browser",
+                "javascript",
+                "jquery",
+                "library"
+            ],
+            "time": "2017-03-20T19:02:00+00:00"
+        },
+        {
+            "name": "bower-asset/jquery-ui",
+            "version": "1.12.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/components/jqueryui.git",
+                "reference": "44ecf3794cc56b65954cc19737234a3119d036cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/components/jqueryui/zipball/44ecf3794cc56b65954cc19737234a3119d036cc",
+                "reference": "44ecf3794cc56b65954cc19737234a3119d036cc",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.6"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "jquery-ui.js"
+                ],
+                "bower-asset-ignore": []
+            },
+            "license": [
+                "MIT"
+            ],
+            "time": "2016-09-16T05:47:55+00:00"
         },
         {
             "name": "bower-asset/punycode",
@@ -151,16 +157,16 @@
         },
         {
             "name": "bower-asset/yii2-pjax",
-            "version": "v2.0.7",
+            "version": "2.0.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/jquery-pjax.git",
-                "reference": "885fc8c2d36c93a801b6af0ee8ad55d79df97cb1"
+                "reference": "aef7b953107264f00234902a3880eb50dafc48be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/jquery-pjax/zipball/885fc8c2d36c93a801b6af0ee8ad55d79df97cb1",
-                "reference": "885fc8c2d36c93a801b6af0ee8ad55d79df97cb1",
+                "url": "https://api.github.com/repos/yiisoft/jquery-pjax/zipball/aef7b953107264f00234902a3880eb50dafc48be",
+                "reference": "aef7b953107264f00234902a3880eb50dafc48be",
                 "shasum": ""
             },
             "require": {
@@ -181,7 +187,8 @@
             },
             "license": [
                 "MIT"
-            ]
+            ],
+            "time": "2017-10-12T10:11:14+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -292,51 +299,65 @@
         },
         {
             "name": "npm-asset/fullcalendar",
-            "version": "3.5.1",
+            "version": "3.8.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/fullcalendar/-/fullcalendar-3.5.1.tgz",
+                "url": "https://registry.npmjs.org/fullcalendar/-/fullcalendar-3.8.0.tgz",
                 "reference": null,
-                "shasum": "c70d642ca18d2854fbb97a9b4f5eecef6aa3e884"
+                "shasum": "4c0fe494a62b0a8d640c6de8eb883b49a212b5dc"
             },
             "require": {
                 "npm-asset/jquery": ">=2,<4.0",
                 "npm-asset/moment": ">=2.9.0,<3.0.0"
             },
             "require-dev": {
+                "npm-asset/awesome-typescript-loader": ">=3.3.0,<4.0.0",
                 "npm-asset/bootstrap": ">=3.3.7,<4.0.0",
                 "npm-asset/components-jqueryui": "dev-github:components/jqueryui",
+                "npm-asset/css-loader": ">=0.28.7,<0.29.0",
                 "npm-asset/del": ">=2.2.1,<3.0.0",
+                "npm-asset/dts-generator": ">=2.1.0,<3.0.0",
+                "npm-asset/eslint": ">=4.13.1,<5.0.0",
+                "npm-asset/eslint-config-standard": ">=11.0.0-beta.0,<12.0.0",
+                "npm-asset/eslint-plugin-import": ">=2.8.0,<3.0.0",
+                "npm-asset/eslint-plugin-node": ">=5.2.1,<6.0.0",
+                "npm-asset/eslint-plugin-promise": ">=3.6.0,<4.0.0",
+                "npm-asset/eslint-plugin-standard": ">=3.0.1,<4.0.0",
+                "npm-asset/extract-text-webpack-plugin": ">=3.0.2,<4.0.0",
+                "npm-asset/glob": ">=7.1.2,<8.0.0",
                 "npm-asset/gulp": ">=3.9.1,<4.0.0",
-                "npm-asset/gulp-concat": ">=2.6.0,<3.0.0",
                 "npm-asset/gulp-cssmin": ">=0.1.7,<0.2.0",
-                "npm-asset/gulp-file": ">=0.3.0,<0.4.0",
+                "npm-asset/gulp-eslint": ">=4.0.0,<5.0.0",
                 "npm-asset/gulp-filter": ">=4.0.0,<5.0.0",
-                "npm-asset/gulp-jscs": ">=4.0.0,<5.0.0",
-                "npm-asset/gulp-jshint": ">=2.0.1,<3.0.0",
-                "npm-asset/gulp-modify": ">=0.1.1,<0.2.0",
-                "npm-asset/gulp-plumber": ">=1.1.0,<2.0.0",
+                "npm-asset/gulp-modify-file": ">=1.0.0,<2.0.0",
                 "npm-asset/gulp-rename": ">=1.2.2,<2.0.0",
-                "npm-asset/gulp-replace": ">=0.5.4,<0.6.0",
-                "npm-asset/gulp-sourcemaps": ">=1.6.0,<2.0.0",
-                "npm-asset/gulp-template": ">=4.0.0,<5.0.0",
+                "npm-asset/gulp-tslint": ">=8.1.2,<9.0.0",
                 "npm-asset/gulp-uglify": ">=2.0.0,<3.0.0",
                 "npm-asset/gulp-util": ">=3.0.7,<4.0.0",
+                "npm-asset/gulp-watch": ">=4.3.11,<5.0.0",
                 "npm-asset/gulp-zip": ">=3.2.0,<4.0.0",
                 "npm-asset/jasmine-core": "2.5.2",
                 "npm-asset/jasmine-fixture": ">=2.0.0,<3.0.0",
                 "npm-asset/jasmine-jquery": ">=2.1.1,<3.0.0",
                 "npm-asset/jquery-mockjax": ">=2.2.0,<3.0.0",
                 "npm-asset/jquery-simulate": "dev-github:jquery/jquery-simulate",
-                "npm-asset/jshint": ">=2.9.2,<3.0.0",
                 "npm-asset/karma": ">=0.13.22,<0.14.0",
                 "npm-asset/karma-jasmine": ">=1.0.2,<2.0.0",
                 "npm-asset/karma-phantomjs-launcher": ">=1.0.0,<2.0.0",
-                "npm-asset/lodash": ">=4.14.1,<5.0.0",
+                "npm-asset/karma-sourcemap-loader": ">=0.3.7,<0.4.0",
+                "npm-asset/karma-verbose-reporter": "0.0.6",
                 "npm-asset/moment-timezone": ">=0.5.5,<0.6.0",
                 "npm-asset/native-promise-only": ">=0.8.1,<0.9.0",
+                "npm-asset/node-sass": ">=4.7.2,<5.0.0",
                 "npm-asset/phantomjs-prebuilt": ">=2.1.7,<3.0.0",
-                "npm-asset/socket.io": "1.4.5",
+                "npm-asset/sass-loader": ">=6.0.6,<7.0.0",
+                "npm-asset/tslib": ">=1.8.0,<2.0.0",
+                "npm-asset/tslint": ">=5.8.0,<6.0.0",
+                "npm-asset/tslint-config-standard": ">=7.0.0,<8.0.0",
+                "npm-asset/types--jquery": "2.0.47",
+                "npm-asset/typescript": ">=2.6.1,<3.0.0",
+                "npm-asset/webpack": ">=3.8.1,<4.0.0",
+                "npm-asset/webpack-stream": ">=4.0.0,<5.0.0",
                 "npm-asset/yargs": ">=4.8.1,<5.0.0"
             },
             "type": "npm-asset-library",
@@ -347,6 +368,7 @@
                 "npm-asset-files": [
                     "dist/*.js",
                     "dist/*.css",
+                    "dist/*.d.ts",
                     "dist/locale/*.js",
                     "README.*",
                     "LICENSE.*",
@@ -360,8 +382,10 @@
                     "url": "git+https://github.com/fullcalendar/fullcalendar.git"
                 },
                 "npm-asset-scripts": {
-                    "test": "gulp test:single",
-                    "lint": "gulp lint"
+                    "clean": "gulp clean",
+                    "dist": "gulp dist",
+                    "lint": "gulp lint",
+                    "test": "gulp test:single"
                 }
             },
             "license": [
@@ -381,39 +405,49 @@
                 "event",
                 "full-sized",
                 "jquery-plugin"
-            ]
+            ],
+            "time": "2017-12-18T05:59:22+00:00"
         },
         {
             "name": "npm-asset/fullcalendar-scheduler",
-            "version": "1.7.1",
+            "version": "1.9.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/fullcalendar-scheduler/-/fullcalendar-scheduler-1.7.1.tgz",
+                "url": "https://registry.npmjs.org/fullcalendar-scheduler/-/fullcalendar-scheduler-1.9.1.tgz",
                 "reference": null,
-                "shasum": "03501f430cc5d9d2ed46210e3cf70b49ff3ce951"
+                "shasum": "a9f5d7af913e9fe4a16cbc4589964f40b76bf01f"
             },
             "require": {
-                "npm-asset/fullcalendar": "~3.5.1",
+                "npm-asset/fullcalendar": "~3.8.0",
                 "npm-asset/jquery": ">=2,<4.0",
                 "npm-asset/moment": ">=2.9.0,<3.0.0"
             },
             "require-dev": {
-                "npm-asset/coffee-script": ">=1.9.3,<2.0.0",
+                "npm-asset/awesome-typescript-loader": ">=3.4.0,<4.0.0",
                 "npm-asset/components-jqueryui": "dev-github:components/jqueryui",
+                "npm-asset/css-loader": ">=0.28.7,<0.29.0",
                 "npm-asset/del": ">=2.2.0,<3.0.0",
+                "npm-asset/dts-generator": ">=2.1.0,<3.0.0",
+                "npm-asset/eslint": ">=4.13.1,<5.0.0",
+                "npm-asset/eslint-config-standard": ">=11.0.0-beta.0,<12.0.0",
+                "npm-asset/eslint-plugin-import": ">=2.8.0,<3.0.0",
+                "npm-asset/eslint-plugin-jasmine": ">=2.9.1,<3.0.0",
+                "npm-asset/eslint-plugin-node": ">=5.2.1,<6.0.0",
+                "npm-asset/eslint-plugin-promise": ">=3.6.0,<4.0.0",
+                "npm-asset/eslint-plugin-standard": ">=3.0.1,<4.0.0",
+                "npm-asset/extract-text-webpack-plugin": ">=3.0.2,<4.0.0",
                 "npm-asset/gulp": ">=3.9.0,<4.0.0",
-                "npm-asset/gulp-coffee": ">=2.3.1,<3.0.0",
                 "npm-asset/gulp-concat": ">=2.6.0,<3.0.0",
                 "npm-asset/gulp-cssmin": ">=0.1.7,<0.2.0",
+                "npm-asset/gulp-eslint": ">=4.0.0,<5.0.0",
                 "npm-asset/gulp-filter": ">=4.0.0,<5.0.0",
-                "npm-asset/gulp-modify": ">=0.1.1,<0.2.0",
+                "npm-asset/gulp-modify-file": ">=1.0.0,<2.0.0",
                 "npm-asset/gulp-plumber": ">=1.0.1,<2.0.0",
                 "npm-asset/gulp-rename": ">=1.2.2,<2.0.0",
-                "npm-asset/gulp-replace": ">=0.5.3,<0.6.0",
-                "npm-asset/gulp-sourcemaps": ">=1.6.0,<2.0.0",
-                "npm-asset/gulp-template": ">=4.0.0,<5.0.0",
+                "npm-asset/gulp-tslint": ">=8.1.2,<9.0.0",
                 "npm-asset/gulp-uglify": ">=1.2.0,<2.0.0",
                 "npm-asset/gulp-util": ">=3.0.7,<4.0.0",
+                "npm-asset/gulp-watch": ">=4.3.11,<5.0.0",
                 "npm-asset/gulp-zip": ">=3.0.2,<4.0.0",
                 "npm-asset/jasmine-core": "2.5.2",
                 "npm-asset/jasmine-fixture": ">=2.0.0,<3.0.0",
@@ -421,12 +455,20 @@
                 "npm-asset/jquery-mockjax": ">=2.2.1,<3.0.0",
                 "npm-asset/jquery-simulate": "dev-github:jquery/jquery-simulate",
                 "npm-asset/karma": ">=1.1.1,<2.0.0",
-                "npm-asset/karma-coffee-preprocessor": ">=1.0.1,<2.0.0",
                 "npm-asset/karma-jasmine": ">=1.0.2,<2.0.0",
                 "npm-asset/karma-phantomjs-launcher": ">=1.0.1,<2.0.0",
-                "npm-asset/lodash": ">=4.16.2,<5.0.0",
+                "npm-asset/karma-sourcemap-loader": ">=0.3.7,<0.4.0",
                 "npm-asset/native-promise-only": ">=0.8.1,<0.9.0",
+                "npm-asset/node-sass": ">=4.7.2,<5.0.0",
                 "npm-asset/phantomjs-prebuilt": ">=2.1.7,<3.0.0",
+                "npm-asset/sass-loader": ">=6.0.6,<7.0.0",
+                "npm-asset/tslib": ">=1.8.0,<2.0.0",
+                "npm-asset/tslint": ">=5.8.0,<6.0.0",
+                "npm-asset/tslint-config-standard": ">=7.0.0,<8.0.0",
+                "npm-asset/types--jquery": "2.0.47",
+                "npm-asset/typescript": ">=2.6.2,<3.0.0",
+                "npm-asset/webpack": ">=3.8.1,<4.0.0",
+                "npm-asset/webpack-stream": ">=4.0.0,<5.0.0",
                 "npm-asset/yargs": ">=4.6.0,<5.0.0"
             },
             "type": "npm-asset-library",
@@ -437,6 +479,7 @@
                 "npm-asset-files": [
                     "dist/*.js",
                     "dist/*.css",
+                    "dist/*.d.ts",
                     "README.*",
                     "LICENSE.*",
                     "CHANGELOG.*",
@@ -449,14 +492,19 @@
                     "url": "git+https://github.com/fullcalendar/fullcalendar-scheduler.git"
                 },
                 "npm-asset-scripts": {
-                    "test": "gulp test:single"
+                    "clean": "gulp clean",
+                    "dist": "gulp dist",
+                    "lint": "gulp lint",
+                    "test": "gulp test:single",
+                    "test-side-effects": "./bin/test-side-effects.sh"
                 }
             },
             "license": [
                 "SEE LICENSE IN LICENSE.md"
             ],
             "description": "A premium add-on to FullCalendar for displaying events and resources",
-            "homepage": "https://fullcalendar.io/scheduler/"
+            "homepage": "https://fullcalendar.io/scheduler/",
+            "time": "2017-12-18T06:00:21+00:00"
         },
         {
             "name": "npm-asset/jquery",
@@ -539,12 +587,12 @@
         },
         {
             "name": "npm-asset/moment",
-            "version": "2.18.1",
+            "version": "2.20.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/moment/-/moment-2.18.1.tgz",
+                "url": "https://registry.npmjs.org/moment/-/moment-2.20.1.tgz",
                 "reference": null,
-                "shasum": "c36193dd3ce1c2eed2adb7c802dbbc77a81b1c0f"
+                "shasum": "d6eb1a46cbcc14a2b2f9434112c1ff8907f313fd"
             },
             "require-dev": {
                 "npm-asset/benchmark": "dev-default|*",
@@ -646,25 +694,26 @@
                 "parse",
                 "time",
                 "validate"
-            ]
+            ],
+            "time": "2017-12-19T04:44:18+00:00"
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.12",
+            "version": "2.0.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "70acbecc75cb26b6cd66d16be0b06e4b73db190d"
+                "reference": "7af96d8da5ea3e9a5dd05d0e734b21c5726a6ddf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/70acbecc75cb26b6cd66d16be0b06e4b73db190d",
-                "reference": "70acbecc75cb26b6cd66d16be0b06e4b73db190d",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/7af96d8da5ea3e9a5dd05d0e734b21c5726a6ddf",
+                "reference": "7af96d8da5ea3e9a5dd05d0e734b21c5726a6ddf",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/jquery": "2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
-                "bower-asset/jquery.inputmask": "~3.2.2 | ~3.3.5",
+                "bower-asset/inputmask": "~3.2.2 | ~3.3.5",
+                "bower-asset/jquery": "3.2.*@stable | 3.1.*@stable | 2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
                 "bower-asset/punycode": "1.3.*",
                 "bower-asset/yii2-pjax": "~2.0.1",
                 "cebe/markdown": "~1.0.0 | ~1.1.0",
@@ -746,7 +795,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2017-06-05T14:33:41+00:00"
+            "time": "2017-11-14T11:08:21+00:00"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -800,30 +849,26 @@
         },
         {
             "name": "yiisoft/yii2-jui",
-            "version": "2.0.6",
+            "version": "2.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-jui.git",
-                "reference": "843a2160cfe30f5c8b0cb2e9dbd8ee6bcf97e71d"
+                "reference": "ce45c16d4fbbe7d1c516d8d0e8311e07f6138eed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-jui/zipball/843a2160cfe30f5c8b0cb2e9dbd8ee6bcf97e71d",
-                "reference": "843a2160cfe30f5c8b0cb2e9dbd8ee6bcf97e71d",
+                "url": "https://api.github.com/repos/yiisoft/yii2-jui/zipball/ce45c16d4fbbe7d1c516d8d0e8311e07f6138eed",
+                "reference": "ce45c16d4fbbe7d1c516d8d0e8311e07f6138eed",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/jquery-ui": "1.11.*@stable",
-                "yiisoft/yii2": ">=2.0.4"
+                "bower-asset/jquery-ui": "~1.12.1",
+                "yiisoft/yii2": "~2.0.4"
             },
             "type": "yii2-extension",
             "extra": {
                 "branch-alias": {
                     "dev-master": "2.0.x-dev"
-                },
-                "asset-installer-paths": {
-                    "npm-asset-library": "vendor/npm",
-                    "bower-asset-library": "vendor/bower"
                 }
             },
             "autoload": {
@@ -846,7 +891,7 @@
                 "jQuery UI",
                 "yii2"
             ],
-            "time": "2016-07-22T22:26:59+00:00"
+            "time": "2017-11-25T15:32:29+00:00"
         }
     ],
     "packages-dev": [],
