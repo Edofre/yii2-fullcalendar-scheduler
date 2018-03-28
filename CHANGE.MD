@@ -3,8 +3,9 @@ Change Log: `yii2-fullcalendar-scheduler`
 
 ## Version 1.1.12
 
-**Date:** 05-Jan-2018
+**Date:** 28-Mar-2018
 
+- Properly pushed branch
 - New fullcalendar version (3.8.0)
 - New fullcalendar scheduler version (1.9.1)
 
